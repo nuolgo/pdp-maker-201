@@ -1,0 +1,30 @@
+{
+  "name": "nuolgo-pdp-maker",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-24-bookworm",
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/pnpm:2": {
+      "version": "9.0.0"
+    }
+  },
+  "postCreateCommand": "pnpm install",
+  "forwardPorts": [3000, 4000],
+  "portsAttributes": {
+    "3000": { "label": "web (Next.js)", "onAutoForward": "notify" },
+    "4000": { "label": "api", "onAutoForward": "notify" }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "Prisma.prisma",
+        "bradlc.vscode-tailwindcss"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      }
+    }
+  },
+  "remoteUser": "node"
+}
