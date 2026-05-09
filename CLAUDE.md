@@ -33,6 +33,7 @@
 | 타입체크 | `pnpm typecheck` |
 | Prisma 클라이언트 재생성 | `pnpm --filter @runacademy/api prisma:generate` |
 | 듀얼 푸시 | `pnpm run push:all` |
+| 다른 PC와 동기화 | `pnpm sync` (rebase pull + push, 미커밋 시 멈춤) |
 
 ## Git 워크플로
 - **main 직접 푸시 금지** — feature 브랜치 만들고 PR로 머지

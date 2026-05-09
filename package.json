@@ -8,6 +8,7 @@
     "build": "pnpm -r build",
     "lint": "pnpm -r lint",
     "typecheck": "pnpm -r typecheck",
-    "push:all": "bash ./scripts/push-all.sh"
+    "push:all": "bash ./scripts/push-all.sh",
+    "sync": "bash ./scripts/sync.sh"
   }
 }

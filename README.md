@@ -38,3 +38,10 @@ git push origin main          # 또는 pnpm run push:all
 ```
 
 - 웹 배포는 `origin` push에 트리거됩니다.
+
+## 다른 PC/폰과 동기화
+어디서든 작업 시작/종료 시 한 줄:
+```bash
+pnpm sync
+```
+현재 브랜치를 `origin`에서 rebase pull → push 합니다. 미커밋 변경이 있으면 멈추고 알려줍니다(우발적 커밋 방지). 폰은 Codespaces로 열면 항상 최신이라 별도 동작 불필요.
