@@ -36,7 +36,7 @@
 - 운영 DB 영향 가능성 (Prisma 마이그레이션의 위험 신호)
 - 비밀값/환경변수 추가
 - main 브랜치 직접 변경 또는 force push 필요 추정
-- README의 듀얼 리모트 전략과 다른 push 동작
+- README의 리모트 전략과 다른 push 동작 (예: 미러 추가/제거, force push)
 - 외부 서비스 호출이 새로 추가됨 (rate limit, 비용)
 
 ## 메모

@@ -36,11 +36,9 @@
 
 ## Git 워크플로
 - **main 직접 푸시 금지** — feature 브랜치 만들고 PR로 머지
-- **듀얼 리모트**:
-  - `origin` → `pdp-maker-202` (Vercel 배포 기준)
-  - `local201` → `pdp-maker-201` (로컬 동기화)
-- 푸시는 항상 `pnpm run push:all`로 양쪽 동시
-- Vercel 배포 확인은 `202` 기준
+- **리모트**: `origin` → `pdp-maker-201` (현재 유일, Vercel 배포 기준)
+- 푸시: `git push origin <branch>` 또는 `pnpm run push:all`
+- 미러 저장소(`pdp-maker-202`)는 미사용 상태 — 추가 시 `MIRROR_REMOTE`로 활성화 (`scripts/push-all.sh`)
 
 ## 비밀 정보
 - API 키, DB URL, 어드민 비번 등은 `.env`에만 두고 **절대 커밋 금지**
