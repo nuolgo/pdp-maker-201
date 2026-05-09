@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(where gh *)",
+      "Bash(winget --version)",
+      "Bash(choco --version)"
+    ]
+  }
+}

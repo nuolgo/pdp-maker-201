@@ -17,3 +17,9 @@ coverage
 *.tsbuildinfo
 eval "$(ssh-agent -s)"
 eval "$(ssh-agent -s)".pub
+
+# harness scratch — drafts/reviews are local-only, outputs may be committed selectively
+_workspace/drafts/*
+!_workspace/drafts/.gitkeep
+_workspace/reviews/*
+!_workspace/reviews/.gitkeep
